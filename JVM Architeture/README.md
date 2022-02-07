@@ -11,8 +11,7 @@ There are mainly three sub systems in the JVM
 3. Execution Engine
 
 
-
-![](C:\Users\desha\OneDrive\Desktop\classloader.png)
+<img src="https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/JVM%20Architeture/classloader.png">
 
 ## 1. ClassLoader
 
