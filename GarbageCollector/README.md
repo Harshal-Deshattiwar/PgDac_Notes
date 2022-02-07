@@ -57,7 +57,7 @@ The basic process of Hotspot JVM Garbage collector completes in two phases:
 OR
 2.2 **Deletion and Compaction:** As you see in normal deletion there are free blocks between referenced objects. To further improve performance, in addition to deleting unreferenced objects, remaining referenced object will be compacted(re aligned).
 
-![](C:\Users\desha\OneDrive\Desktop\All_pgdac_data\AdvancedJava\day21-data\day21_help\JVM%20Architecture\JVM%20memory.png)
+<img src = "https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/GarbageCollector/JVM%20memory.png" />
 
 **Why Heap divided into Generations ?**
 It is a time consuming process to scan all of the objects from a whole heap and further mark and compact them. The list of the object grows gradually which leads to longer garbage collection time as more and more objects are allocated with time.
