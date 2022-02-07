@@ -46,6 +46,8 @@ Note —Only for the first time, JVM creates an object from a class type object(
 3. Delegation Hierarchy Principle — This rule states that JVM follows a hierarchy of delegation to choose the class loader for each class loading request. Here, starting from the lowest child level, Application ClassLoader delegates the received class loading request to Extension ClassLoader, and then Extension ClassLoader delegates the request to Bootstrap ClassLoader. If the requested class is found in the Bootstrap path, the class is loaded. Otherwise, the request again transfers back to the Extension ClassLoader level to find the class from the Extension path or custom-specified path. If it also fails, the request comes back to Application ClassLoader to find the class from the System classpath and if Application ClassLoader also fails to load the requested class, then we get the run time exception — ClassNotFoundException.
 4. No Unloading Principle — This states that a class cannot be unloaded by the Classloader even though it can load a class. 
 
+
+<img src="https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/JVM%20Architeture/classloader.png">
 #### 1.2  Linking
 
 This process is  divided into three main parts .
@@ -60,6 +62,8 @@ Byte code verifier will check the following:
 
 ###### if any of these are missing, JVM will throw a runtime exception called “java.lang.VerifyError” Exception. if not, then the preparation process will take place.
 
+
+<img src="https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/JVM%20Architeture/classloader.png">
 #### 1.2.2 Preparation
 
 In this phase,  variables memory will be allocated for all static data members and assigned with default values based on the data types.
@@ -70,6 +74,8 @@ eg :
 static boolean active=true;
 So in this phase, it will check the code and the variable status in boolean type so JVM assigns false to that variable.
 
+
+<img src="https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/JVM%20Architeture/classloader.png">
 #### 1.2.3 Initialization
 
 In this phase, the original values will be assigned back to the static variables as mentioned in the code and a static initilizer  block will be executed(if any). The execution takes place from top to bottom in a class and from parent to child in the class hierarchy. 
