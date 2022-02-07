@@ -1,8 +1,7 @@
 # JVM Architeture
 
 ---
-
-![](C:\Users\desha\OneDrive\Desktop\All_pgdac_data\AdvancedJava\day21-data\day21_help\JVM%20Architecture\JVM-Architecture%20in%20Details.png)
+<img src="https://github.com/Harshal-Deshattiwar/PgDac_Notes/blob/main/JVM%20Architeture/JVM-Architecture%20in%20Details.png">
 
 JVM architecture (refer to a diagram) 
 There are mainly three sub systems in the JVM 
